@@ -53,3 +53,48 @@
 .espacio {
     padding-bottom: 100px;
 }
+
+/* exageracion */
+.container2 {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+.container2 .mi-clase { 
+    width: 18vw; height: 14vw;
+    display: block;
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+}
+
+.kirby {
+    animation: kirby 4s infinite;
+    position: relative;
+    animation-delay: 3s;
+    
+}
+
+@keyframes kirby {
+    0% {transform: scale(1);}
+    100% {transform: scale(2);}
+
+
+    0% {top: 0; left: 0;}
+    20% {top: 60%;}
+    40% {top: -6%;}
+    60% {left: -10px;}
+    72% {left: 60%;}
+    100% {top: 100%; left: 50%;}
+
+    from {-webkit-transform: rotate(0deg); transform: rotateY(0deg);}
+    
+    50%{-webkit-transform: rotate(180deg); transform: rotateY(180deg);} 
+	to {-webkit-transform: rotate(360deg); transform: rotateY(360deg);}
+
+    100% {top: 0; left: 0;}
+  }
+/* exageracion */
